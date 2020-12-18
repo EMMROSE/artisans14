@@ -1,15 +1,13 @@
 .banner {
   background-size: cover;
   background-position: center;
-  background: #D3CCE3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.jpg);
+  object-fit: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url("../assets/blueprint.jpg");
   padding: 150px 0;
 }
 
 .banner h1 {
-  padding-left: 64px;
+  padding-left: 88px;
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -18,9 +16,9 @@
 }
 
 .banner p {
-  padding-left: 64px;
+  padding-left: 88px;
   font-size: 20px;
   color: white;
-  opacity: .7;
+  margin-top: 8px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
