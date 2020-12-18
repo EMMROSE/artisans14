@@ -2,23 +2,23 @@
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url("../assets/blueprint.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url("../assets/blueprint.jpg");
   padding: 150px 0;
 }
 
 .banner h1 {
   padding-left: 88px;
   margin: 0;
-  color: white;
+  color: #EEE5E9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
 }
 
 .banner p {
   padding-left: 88px;
   font-size: 20px;
-  color: white;
-  margin-top: 8px;
+  color: #EEE5E9;
+  margin-top: 16px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

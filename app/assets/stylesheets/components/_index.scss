@@ -7,7 +7,21 @@
 @import "footer";
 @import "navbar";
 @import "realisation";
+@import "domaine";
 
 .resume {
-  margin-top: 24px;
+  padding: 48px 0 48px 0;
+  text-align: center;
+}
+
+.label {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.avis {
+  padding: 32px;
 }
