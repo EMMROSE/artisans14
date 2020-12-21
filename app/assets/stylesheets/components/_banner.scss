@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   object-fit: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url("../assets/blueprint.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url("../assets/../assets/sub-off-plan.jpg");
   padding: 150px 0;
 }
 
@@ -21,4 +21,9 @@
   color: #EEE5E9;
   margin-top: 16px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner img {
+  height: 30vh;
+  width: auto;
 }
