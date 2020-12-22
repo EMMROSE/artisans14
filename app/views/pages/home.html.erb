@@ -31,14 +31,16 @@
         <img src="../assets/capeb.png" alt="">
       </div>
     </div>
-    <h3 style="text-align: center">Nous trouver, Nous contacter</h3>
+    <h3 style="text-align: center">Retrouvez nos mebres du GA14</h3>
     <br>
     <div class="cards">
       <div class="card silver">
         <img src="../assets/aze_logo.png" alt="logo">
         <p>Entreprise de maçonnerie et gros oeuvre à Caen<br>Elle réalise des travaux de construction ou de rénovation.</p>
         <p>7 rue du Pont Rouge 14320 LAIZE LA VILLE<br><strong>06 19 76 08 21</strong> - <strong>aze2j@live.fr</strong></p>
-        <a href="#" class="button">voir leur site</a>
+        <%= link_to aze_path do %>
+          <span class="button">voir leur site</span>
+        <% end %>
       </div>
       <div class="card silver">
         <img src="../assets/poncet.jpg" alt="logo" style="max-width: 50%; height: auto;">

@@ -25,3 +25,24 @@
 .avis {
   padding: 32px;
 }
+
+.pageforeach {
+  min-height: 100vh;
+  padding: 32px;
+  background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.4)), url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#logo {
+  max-width: 50%;
+  height: auto;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 991px) {
+ #logo {
+    max-width: 90%;
+    height: auto;
+  }
+}
