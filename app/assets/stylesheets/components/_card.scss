@@ -37,6 +37,7 @@
   background: linear-gradient(to right, #D3CCE3, #C6BEDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
   color: #1C2E51;
   box-shadow: 0 0 8px rgba(0,0,0,0.5);
@@ -64,9 +65,10 @@
       background:linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
     }
   img {
-    height: 33%;
+    height: 30%;
     width: auto;
     max-width: 90%;
+    padding-top: 16px;
   }
 }
 
