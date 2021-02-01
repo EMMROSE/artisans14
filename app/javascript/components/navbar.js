@@ -3,7 +3,7 @@ const scrolledNav = () => {
   const element = document.querySelector('#js-animation2');
   if (intervention) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 1200) {
         intervention.classList.remove('d-none');
         intervention.classList.add('animate__animated', 'animate__backInLeft');
       }

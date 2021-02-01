@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding: 0px 50px;
+  padding: 32px;
   color: rgba(0,0,0,0.3);
   img {
     width: 50px;
@@ -12,7 +12,8 @@
 }
 .footer-links {
   display: flex;
-  align-items: center;
+  min-width: 30%;
+  justify-content: space-between;
 }
 .footer-links a {
   color: white;
