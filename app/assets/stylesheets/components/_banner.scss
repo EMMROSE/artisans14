@@ -27,3 +27,11 @@
   height: 30vh;
   width: auto;
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 991px) {
+  .banner img {
+    height: auto;
+    width: 90%;
+  }
+}

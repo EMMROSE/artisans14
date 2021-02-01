@@ -1,7 +1,7 @@
 /* Logo Slider */
 
 .logo-slider {
-  background: rgba(170, 170, 170, 0.4);
+  background: rgba(255, 255, 255, 0.4);
   -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
   box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
   margin: auto;
@@ -9,11 +9,12 @@
   position: relative;
   width: 100%;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .logo-slider::before, .logo-slider::after {
-  background: -webkit-gradient(linear, left top, right top, from(#989999), to(rgba(153, 153, 153, 0)));
-  background: linear-gradient(to right, #989999 0%, rgba(153, 153, 153, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 175px;
   position: absolute;
@@ -40,7 +41,7 @@
   display: -ms-flexbox;
   display: flex;
   width: calc(250px * 3);
-  animation-duration: 10s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
@@ -59,7 +60,7 @@
   display: flex;
   align-items: center;
   img {
-    height: 90%;
+    height: 20vh;
     width: auto;
     padding: 20px;
   }
