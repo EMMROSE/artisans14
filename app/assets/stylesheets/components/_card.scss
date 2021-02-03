@@ -7,7 +7,7 @@
 }
 
 .cards {
-  padding: 32px;
+  // padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -29,7 +29,8 @@
 
 
 .card {
-  width: 100%;
+  width: 80%;
+  font-size: 0.75rem;
   border-radius: 8px;
   background: #D3CCE3;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #D3CCE3, #C6BEDA);  /* Chrome 10-25, Safari 5.1-6 */
