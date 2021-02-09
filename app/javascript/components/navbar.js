@@ -1,17 +1,8 @@
 const scrolledNav = () => {
-  const intervention = document.querySelector('#js-animation');
-  const element = document.querySelector('#js-animation2');
-  if (intervention) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= 1200) {
-        intervention.classList.remove('d-none');
-        intervention.classList.add('animate__animated', 'animate__backInLeft');
-      }
-    });
-  }
+  const element = document.querySelector('#js-animation');
   if (element) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= 800) {
+      if (window.scrollY >= 1200) {
         element.classList.remove('d-none');
         element.classList.add('animate__animated', 'animate__backInLeft');
       }
@@ -19,6 +10,31 @@ const scrolledNav = () => {
   }
 }
 
+const scrolledNav2 = () => {
+  const element = document.querySelector('#js-animation2');
+  if (element) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 1200) {
+        element.classList.remove('d-none');
+        element.classList.add('animate__animated', 'animate__backInLeft');
+      }
+    });
+  }
+}
 
+const scrolledNav3 = () => {
+  const element = document.querySelector('#js-animation-p');
+  if (element) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 0) {
+        element.classList.remove('d-none');
+        element.classList.add('animate__animated', 'animate__backInLeft');
+      }
+    });
+  }
+}
 
 export { scrolledNav }
+export { scrolledNav2 }
+export { scrolledNav3 }
+

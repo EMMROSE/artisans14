@@ -4,10 +4,11 @@
 @import "banner";
 @import "button";
 @import "card";
+@import "domaine";
 @import "footer";
+@import "form";
 @import "navbar";
 @import "realisation";
-@import "domaine";
 @import "slider";
 
 .blueline {
@@ -24,7 +25,7 @@
 
 
 .resume {
-  padding: 8vw 10vw;
+  padding: 5vh 10vw 10vw 10vw;
   text-align: center;
   p {font-size: 1.25rem;}
 }
