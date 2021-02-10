@@ -16,45 +16,21 @@
              <%= f.input :name, placeholder: "votre nom" %>
              <%= f.input :email, placeholder: "votre email" %>
              <%= f.input :phone, placeholder: "votre n° de télépĥone" %>
-
-             <fieldset class="form-group required">
-               <input type="hidden" name="contact[number][]" value="">
-               <h3>Votre projet concerne des travaux de ?</h3>
-
-               <div class="form_cards">
-                 <input class="d-none required" type="radio" value="1" name="contact[number]" id="1">
-                 <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="1">
-                   <p>Peinture</p>
-                 </label>
-                 <input class="d-none required" type="radio" value="2" name="contact[number]" id="2">
-                 <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="2">
-                   <p>Carrelage</p>
-                 </label>
-                 <input class="d-none required" type="radio" value="3" name="contact[number]" id="3">
-                 <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="3">
-                   <p>Plomberie</p>
-                 </label>
-                 <input class="d-none required" type="radio" value="4" name="contact[number]" id="4">
-                 <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="4">
-                   <p>Menuiserie</p>
-                 </label>
-                 <input class="d-none required" type="radio" value="5" name="contact[number]" id="5">
-                 <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="5">
-                   <p>Electricité</p>
-                 </label>
-                  <input class="d-none required" type="radio" value="6" name="contact[number]" id="6">
-                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="6">
-                   <p>TOUT</p>
-                 </label>
+             <div class="form_cards">
+               <div>
+                 <%= f.label :electricite, class:"gift-choice" %>
+                 <%= f.check_box :electricite, class:"d-none" %>
                </div>
-             </fieldset>
+               <div>
+                 <%= f.label :plombier, class:"gift-choice" %>
+                 <%= f.check_box :plombier, class:"d-none" %>
+               </div>
+               <div>
+                 <%= f.label :tout, class:"gift-choice" %>
+                 <%= f.check_box :tout, class:"d-none" %>
+               </div>
+             </div>
              <%= f.input :message, label: 'Décrivez votre projet (facultatif)', as: :text, placeholder: "Ma demande concerne..." %>
-
-             <!-- <label class="select optional" for="sport_session_location">Where are you heading?</label>
-             <input type="text" name="sport_session[location]" id="sport_session[location]" value="" style="text-align: left; position: relative; vertical-align: top; width: 100%" class="search_query" placeholder="Anywhere">
-
-             TO DO: BUTTON FOR SELECT CATEGORY AS ACTIVITY CHOICE IN GOM PROJECT
--->
            </div>
            <div class="form-button">
             <%= f.submit "Soumettre", class: 'btn btn-primary'%>

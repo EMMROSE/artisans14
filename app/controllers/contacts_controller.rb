@@ -7,7 +7,6 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    @contact.number
     raise
     if @contact.save
       ContactMailer.general_message(@contact).deliver_now
@@ -22,6 +21,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :address, :phone, :number, :message)
+    params.require(:contact).permit(:name, :email, :address, :phone, :electricite, :plombier, :tout, :message)
   end
 end

@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(version: 2021_02_08_145205) do
     t.string "name"
     t.string "phone"
     t.string "email"
-    t.string "number"
     t.text "message"
+    t.boolean "plombier"
+    t.boolean "electricite"
+    t.boolean "tout"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

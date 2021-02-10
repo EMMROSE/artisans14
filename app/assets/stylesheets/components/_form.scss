@@ -1,12 +1,13 @@
 .gift-choice {
+  cursor: pointer;
+  display: flex;
   flex: 0 0 30%;
   margin: 16px;
-  // text-align: center;
+  text-align: center;
   // background-color: #b7b7b7;
   border-radius: 5px;
   opacity: 0.3;
   // font-weight: bold;
-  p {margin: auto; padding: 0.5em;}
   &:hover {
     opacity: 1;
     border: solid 2px red;

@@ -4,8 +4,10 @@ class CreateContacts < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :phone
       t.string :email
-      t.string :number
       t.text :message
+      t.boolean :plombier
+      t.boolean :electricite
+      t.boolean :tout
 
       t.timestamps
     end
