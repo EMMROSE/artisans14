@@ -2,7 +2,7 @@ const formSportSessions = () => {
   const formContainer = document.querySelector('.form-container');
 
   if (formContainer) {
-    const gifts = document.querySelectorAll('.form-container .gift-choice');
+    const gifts = document.querySelectorAll('.form_cards .gift-choice');
 
     // Add click effect on gifts radio-button
     gifts.forEach((gift) => {
@@ -38,22 +38,21 @@ const formSportSessions = () => {
     // - Array of HTML elements of the range
     // - Name of the dataset
 
-    const clickEffect = (arr, data) => {
+    const clickEffect = (arr, data, icon = null) => {
       arr.forEach((element) => {
         element.addEventListener('click', (event) => {
+          // arr.forEach((element) => {
+          //   element.style.color = 'transparent';
+          // })
+          // element.style.color = 'white';
           const currentElement = (event.currentTarget.dataset[`${data}`]);
           arr.slice(0, currentElement).forEach((element) => {
             element.classList.add('active');
             element.classList.remove('non-active');
-          });
-
-          arr.slice(currentElement, arr.length).forEach((element) => {
-            element.classList.remove('active');
-            element.classList.add('non-active');
+            if (icon !== null) element.innerHTML = `<i class="fas fa-${icon}"></i>`;
           });
         });
       });
-    };
   };
 };
 

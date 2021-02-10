@@ -16,33 +16,34 @@
              <%= f.input :name, placeholder: "votre nom" %>
              <%= f.input :email, placeholder: "votre email" %>
              <%= f.input :phone, placeholder: "votre n° de télépĥone" %>
+
              <fieldset class="form-group required">
-               <input type="hidden" name="number" value="">
+               <input type="hidden" name="contact[number][]" value="">
                <h3>Votre projet concerne des travaux de ?</h3>
 
                <div class="form_cards">
-                 <input class="d-none required" type="radio" value="1" name="1" id="1">
+                 <input class="d-none required" type="radio" value="1" name="contact[number]" id="1">
                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="1">
                    <p>Peinture</p>
                  </label>
-                 <input class="d-none required" type="radio" value="2" name="2" id="2">
+                 <input class="d-none required" type="radio" value="2" name="contact[number]" id="2">
                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="2">
                    <p>Carrelage</p>
                  </label>
-                 <input class="d-none required" type="radio" value="3" name="3" id="3">
+                 <input class="d-none required" type="radio" value="3" name="contact[number]" id="3">
                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="3">
                    <p>Plomberie</p>
                  </label>
-                 <input class="d-none required" type="radio" value="4" name="4" id="4">
+                 <input class="d-none required" type="radio" value="4" name="contact[number]" id="4">
                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="4">
                    <p>Menuiserie</p>
                  </label>
-                 <input class="d-none required" type="radio" value="5" name="5" id="5">
+                 <input class="d-none required" type="radio" value="5" name="contact[number]" id="5">
                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="5">
                    <p>Electricité</p>
                  </label>
-                  <input class="d-none required" type="radio" value="6" name="6" id="6">
-                 <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="6">
+                  <input class="d-none required" type="radio" value="6" name="contact[number]" id="6">
+                  <label class="form-check-label-gift d-flex collection_radio_buttons gift-choice" for="6">
                    <p>TOUT</p>
                  </label>
                </div>

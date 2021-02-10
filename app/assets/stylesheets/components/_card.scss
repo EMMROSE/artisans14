@@ -39,9 +39,10 @@
   width: 80%;
   font-size: 0.75rem;
   border-radius: 8px;
-  background: #D3CCE3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D3CCE3, #C6BEDA);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D3CCE3, #C6BEDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #C6BDDB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C6BDDB, #C6BEDA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C6BDDB, #C6BEDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.7;
   display: flex;
   align-items: center;
   justify-content: space-between;
