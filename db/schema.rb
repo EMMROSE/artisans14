@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 2021_02_08_145205) do
     t.text "message"
     t.boolean "plombier"
     t.boolean "electricite"
+    t.boolean "peinture"
+    t.boolean "carrelage"
+    t.boolean "cheminee"
+    t.boolean "menuiserie"
+    t.boolean "couverture"
+    t.boolean "amenagement_interieur"
+    t.boolean "amenagement_exterieur"
+    t.boolean "maconnerie"
+    t.boolean "terrassement"
     t.boolean "tout"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
