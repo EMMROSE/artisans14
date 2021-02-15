@@ -3,8 +3,11 @@
   color: #EEE5E9;
   font-weight: bolder;
   border-radius: 8px;
-  background: #4b6cb7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(17,126,152);
+  background: linear-gradient(120deg, rgba(17,126,152,1) 0%, rgba(15,79,89,1) 86%, rgba(5,52,60,1) 98%);
+  // background: #4b6cb7;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   &:hover{ color: #EEE5E9; border: solid 2px #EEE5E9;}
 }
+

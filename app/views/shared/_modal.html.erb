@@ -13,16 +13,16 @@
          <% new_contact = Contact.new %>
          <%= simple_form_for(new_contact) do |f| %>
            <div class="form-top">
-             <%= f.input :name, placeholder: "votre nom" %>
-             <%= f.input :email, placeholder: "votre email" %>
-             <%= f.input :phone, placeholder: "votre n° de télépĥone" %>
+             <%= f.input :name, label:"Nom"%>
+             <%= f.input :email, label: "Email" %>
+             <%= f.input :phone, label: "N° de télépĥone" %>
              <div class="form_cards">
                <div>
                  <%= f.label :tout, class:"gift-choice" %>
                  <%= f.check_box :tout, class:"d-none" %>
                </div>
                <div>
-                 <%= f.label :electricite, class:"gift-choice" %>
+                 <%= f.label :electricité, class:"gift-choice" %>
                  <%= f.check_box :electricite, class:"d-none" %>
                </div>
                <div>
@@ -30,15 +30,15 @@
                  <%= f.check_box :plombier, class:"d-none" %>
                </div>
                <div>
-                 <%= f.label :amenagement_interieur, class:"gift-choice" %>
+                 <%= f.label :agencement, class:"gift-choice" %>
                  <%= f.check_box :amenagement_interieur, class:"d-none" %>
                </div>
                <div>
-                 <%= f.label :maconnerie, class:"gift-choice" %>
+                 <%= f.label :maçonnerie, class:"gift-choice" %>
                  <%= f.check_box :maconnerie, class:"d-none" %>
                </div>
                <div>
-                 <%= f.label :cheminee, class:"gift-choice" %>
+                 <%= f.label :cheminée, class:"gift-choice" %>
                  <%= f.check_box :cheminee, class:"d-none" %>
                </div>
                <div>
@@ -50,7 +50,7 @@
                  <%= f.check_box :electricite, class:"d-none" %>
                </div>
                <div>
-                 <%= f.label :amenagement_exterieur, class:"gift-choice" %>
+                 <%= f.label :terrassement, class:"gift-choice" %>
                  <%= f.check_box :amenagement_exterieur, class:"d-none" %>
                </div>
                <div>
@@ -69,7 +69,7 @@
              <%= f.input :message, label: 'Décrivez votre projet (facultatif)', as: :text, placeholder: "Ma demande concerne..." %>
            </div>
            <div class="form-button">
-            <%= f.submit "Soumettre", class: 'btn btn-primary'%>
+            <%= f.submit "Soumettre", class: 'button'%>
            </div>
          <% end %>
        </div>

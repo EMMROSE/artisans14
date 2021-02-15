@@ -1,10 +1,10 @@
 .footer {
-  background: #0F738A;
+  background-color: #37383C;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding: 32px;
+  padding: 32px 32px 32px 11vw;
   color: rgba(0,0,0,0.3);
   img {
     width: 50px;
@@ -19,7 +19,7 @@
   color: white;
   opacity: 0.15;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 16px;
   padding: 0px 10px;
 }
 .footer-links a:hover {

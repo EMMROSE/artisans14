@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  width: 90%;
+  // width: 90%;
   padding-bottom: 16px;
 }
 
@@ -42,14 +42,13 @@
   background: #C6BDDB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #C6BDDB, #C6BEDA);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #C6BDDB, #C6BEDA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 0.7;
+  opacity: 0.9;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   color: #1C2E51;
   box-shadow: 0 0 8px rgba(0,0,0,0.5);
-  transition: all 0.2s ease-out;
   position:relative;
   overflow:hidden;
   &:hover {box-shadow: 0 0 20px rgba(0,0,0,0.5);}
@@ -61,7 +60,7 @@
       height:100%;
       position: absolute;
       z-index:1;
-      animation: shine 3s infinite ease-in;
+      // animation: shine 3s infinite ease-in;
       background:
         linear-gradient( to right,
           rgba(255,255,255,0) 0%,
@@ -82,6 +81,17 @@
   }
 }
 
+.shine-3s {
+  &:after {
+    animation: shine 3s infinite ease-in;
+  }
+}
+
+.shine-6s {
+  &:after {
+    animation: shine 4.5s infinite ease-in;
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 767px) {

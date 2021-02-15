@@ -25,7 +25,7 @@
 
 
 .resume {
-  padding: 5vh 10vw 10vw 10vw;
+  padding: 5vh 10vw 5vh 10vw;
   text-align: center;
   p {font-size: 1.25rem;}
 }
@@ -51,8 +51,19 @@
 }
 
 #logo {
-  max-width: 50%;
+  width: 20%;
   height: auto;
+}
+
+.subtitle_logo {
+  background-color: #388190;
+  color: white;
+  font-weight: bolder;
+  font-size: 0.75em;
+  width: 30vw;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
 
 // Small devices (landscape phones, 576px and up)
