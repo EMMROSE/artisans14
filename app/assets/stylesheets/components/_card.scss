@@ -11,12 +11,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  // width: 90%;
   padding-bottom: 16px;
 }
 
 .form_cards {
-  // padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -97,6 +95,7 @@
 @media (max-width: 767px) {
   .cards {
     grid-template-columns: 1fr;
+    padding: 4vh;
   }
   .form_cards {
     // padding: 32px;
