@@ -30,7 +30,6 @@
   img {
     height: 20vh;
     width: auto;
-    max-width: 100%;
   }
   padding: 16px 0 16px 0;
 }
@@ -103,6 +102,9 @@
     // padding: 32px;
     grid-template-columns: 1fr;
   }
+  .labels {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -112,6 +114,9 @@
   }
   .form_cards {
     // padding: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .labels {
     grid-template-columns: 1fr 1fr;
   }
 }

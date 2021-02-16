@@ -19,3 +19,14 @@
     opacity: 1;
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 991px) {
+ .gift-choice {
+    width: 30%;
+    a {
+      width: 70%;
+      padding: 6px 10px 6px 10px;
+    }
+  }
+}
