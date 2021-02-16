@@ -26,6 +26,11 @@
     text-align: center;
   &:hover{ border: solid 3px white;}
   }
+  img {
+  width: 80%;
+  height: auto;
+  &:hover{ cursor: pointer; }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
