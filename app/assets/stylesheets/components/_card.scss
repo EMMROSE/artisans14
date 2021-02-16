@@ -99,11 +99,19 @@
   .cards {
     grid-template-columns: 1fr;
   }
+  .form_cards {
+    // padding: 32px;
+    grid-template-columns: 1fr;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form_cards {
+    // padding: 32px;
     grid-template-columns: 1fr 1fr;
   }
 }
