@@ -11,6 +11,14 @@
 @import "realisation";
 @import "slider";
 
+.home {
+  width: 90%;
+  float: right;
+  background-image: linear-gradient(rgba(155,155,155,0.4),rgba(155,155,155,0.4)), url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .blueline {
   display: flex;
   justify-content: space-between;
@@ -25,8 +33,7 @@
 
 
 .resume {
-  padding: 5vh 10vw 5vh 10vw;
-  text-align: center;
+  padding: 5vh;
   p {font-size: 1.25rem;}
 }
 
@@ -43,9 +50,11 @@
 }
 
 .pageforeach {
+  width: 90%;
+  float: right;
   min-height: 100vh;
   padding: 32px;
-  background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.4)), url('../assets/background.jpg');
+  background-image: linear-gradient(rgba(155,155,155,0.7),rgba(155,155,155,0.4)), url('../assets/background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -74,10 +83,11 @@
     max-width: 90%;
     height: auto;
   }
-  .resume {
-    padding: 5vh 21vw 5vh 21vw;
-    text-align: center;
-    p {font-size: 0.75rem;}
+  .home {
+    width: 70%;
+  }
+  .pageforeach {
+    width: 70%;
   }
 }
 
