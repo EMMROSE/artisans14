@@ -37,6 +37,17 @@
   p {font-size: 1.25rem;}
 }
 
+.resume-left {
+  max-width: 40%;
+  text-align: left;
+}
+
+.resume-right {
+  max-width: 40%;
+  text-align: right;
+  float: right;
+}
+
 .label {
   padding: 32px;
   display: flex;
@@ -88,6 +99,18 @@
   }
   .pageforeach {
     width: 70%;
+  }
+  .resume {
+    p {font-size: 0.75rem;}
+    margin-bottom :10vh;
+  }
+  .resume-left {
+    max-width: 100%;
+    text-align: justify;
+  }
+  .resume-right {
+    max-width: 100%;
+    text-align: justify;
   }
 }
 
