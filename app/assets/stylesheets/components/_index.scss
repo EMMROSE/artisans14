@@ -11,6 +11,11 @@
 @import "realisation";
 @import "slider";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 .home {
   width: 90%;
   float: right;
