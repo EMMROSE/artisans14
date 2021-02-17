@@ -147,10 +147,29 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 767px) {
+@media (max-width: 475px) {
   .cards {
     grid-template-columns: 1fr;
-    padding: 4vh;
+    padding: 5vh;
+  }
+  .form_cards {
+    // padding: 32px;
+    grid-template-columns: 1fr;
+  }
+  .labels {
+    grid-template-columns: 1fr 1fr;
+    img {
+      height: 15vh;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 476px) and (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20vh;
   }
   .form_cards {
     // padding: 32px;
