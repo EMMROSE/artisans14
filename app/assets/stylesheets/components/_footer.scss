@@ -6,7 +6,7 @@
   justify-content: space-between;
   height: 100px;
   width: 100%;
-  padding: 32px 32px 32px 11vw;
+  padding: 32px 32px 32px 11%;
   color: rgba(0,0,0,0.3);
   img {
     width: 50px;
@@ -43,7 +43,7 @@
 @media (min-width: 100px) and (max-width: 650px) {
   .footer {
     height: 110px;
-    padding-left: 30%;
+    padding-left: 20%;
     color: rgba(0,0,0,0.3);
     img {
       width: 50px;
@@ -61,6 +61,6 @@
 // Smallest device
 @media (min-width: 665px) and (max-width: 812px) {
   .footer {
-    padding: 32px 32px 32px 30%;
+    padding: 32px 32px 32px 20%;
   }
 }
