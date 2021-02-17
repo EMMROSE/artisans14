@@ -25,6 +25,7 @@
   align-items: center;
   min-width: 50%;
   max-width: 150%;
+  margin-top: 20px;
   h3 {
     width: 70%;
     text-align: center;
@@ -111,6 +112,12 @@
   .resume-right {
     max-width: 100%;
     text-align: justify;
+  }
+  .blueline {
+    margin-top: 24px;
+    h3 {
+      font-size: 1.25rem;
+    }
   }
 }
 
