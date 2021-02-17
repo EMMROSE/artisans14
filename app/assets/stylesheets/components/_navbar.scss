@@ -24,12 +24,15 @@
     background: linear-gradient(120deg, rgba(17,126,152,1) 0%, rgba(15,79,89,1) 86%, rgba(5,52,60,1) 98%);
     opacity: 1.0;
     text-align: center;
+    transition: border 0.3s;
   &:hover{ border: solid 3px white;}
   }
   img {
   width: 80%;
   height: auto;
-  &:hover{ cursor: pointer; }
+  transition: background-color 0.8s;
+  border-radius: 6px;
+  &:hover{ cursor: pointer; background-color: white;}
   }
 }
 
