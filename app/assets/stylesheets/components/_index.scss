@@ -10,6 +10,7 @@
 @import "navbar";
 @import "realisation";
 @import "slider";
+@import "sidebar";
 
 
 html {
@@ -17,7 +18,7 @@ html {
 }
 
 .home {
-  width: 90%;
+  // width: 90%;
   float: right;
   background-image: linear-gradient(rgba(155,155,155,0.4),rgba(155,155,155,0.4)), url('../assets/background.jpg');
   background-size: cover;
@@ -100,9 +101,9 @@ html {
     max-width: 90%;
     height: auto;
   }
-  .home {
-    width: 80%;
-  }
+  // .home {
+  //   width: 80%;
+  // }
   .pageforeach {
     width: 80%;
   }

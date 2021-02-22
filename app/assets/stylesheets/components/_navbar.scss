@@ -14,18 +14,23 @@
   justify-content: space-between;
   z-index: 1;
   a {
-    width: 90%;
-    padding: 8px 12px 8px 12px;
+    width: 100%;
+    // padding: 8px 12px 8px 12px;
+    padding: 8px 0px;
     color: #EEE5E9;
     font-size: 0.7rem;
     font-weight: bolder;
-    border-radius: 8px;
-    background: rgb(17,126,152);
-    background: linear-gradient(120deg, rgba(17,126,152,1) 0%, rgba(15,79,89,1) 86%, rgba(5,52,60,1) 98%);
+    // border-radius: 8px;
+    // background: rgb(17,126,152);
+    // background: linear-gradient(120deg, rgba(17,126,152,1) 0%, rgba(15,79,89,1) 86%, rgba(5,52,60,1) 98%);
     opacity: 1.0;
     text-align: center;
-    transition: border 0.3s;
-  &:hover{ border: solid 3px white;}
+    transition: all 0.3s;
+    &:hover{
+    // border: solid 3px white;
+    background: rgb(17,126,152);
+    background: linear-gradient(120deg, rgba(17,126,152,1) 0%, rgba(15,79,89,1) 86%, rgba(5,52,60,1) 98%);
+    }
   }
   img {
   width: 80%;
