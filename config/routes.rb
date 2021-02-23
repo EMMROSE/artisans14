@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'mattard', to: 'pages#mattard'
   get 'entreprisemarie', to: 'pages#entreprisemarie'
   get 'deniaux_couverture', to: 'pages#deniaux_couverture'
+  get 'rl', to: 'pages#rl'
 
   get 'mention', to: 'pages#mention'
   resources :contacts, only: [:new, :create]

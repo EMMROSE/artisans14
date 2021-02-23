@@ -68,13 +68,13 @@ html {
 }
 
 .pageforeach {
-  width: 90%;
   float: right;
   min-height: 100vh;
   padding: 32px;
   background-image: linear-gradient(rgba(155,155,155,0.7),rgba(155,155,155,0.4)), url('../assets/background.jpg');
   background-size: cover;
   background-position: center;
+  h4 {text-align: center;}
 }
 
 #logo {
@@ -106,7 +106,7 @@ html {
   }
 }
 // Small devices (landscape phones, 576px and up)
-@media @media (min-width: 376px) and (max-width: 992px) {
+@media (min-width: 376px) and (max-width: 992px) {
  #logo {
     max-width: 90%;
     height: auto;
@@ -114,9 +114,7 @@ html {
   // .home {
   //   width: 80%;
   // }
-  .pageforeach {
-    width: 80%;
-  }
+
   .resume {
     p {font-size: 0.75rem;}
     margin-bottom :10vh;
