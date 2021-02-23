@@ -95,8 +95,18 @@ html {
   margin: auto;
 }
 
+@media (max-width: 375px) {
+  .resume-left {
+    max-width: 100%;
+    text-align: justify;
+  }
+  .resume-right {
+    max-width: 100%;
+    text-align: justify;
+  }
+}
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 991px) {
+@media @media (min-width: 376px) and (max-width: 992px) {
  #logo {
     max-width: 90%;
     height: auto;
@@ -112,11 +122,11 @@ html {
     margin-bottom :10vh;
   }
   .resume-left {
-    max-width: 100%;
+    max-width: 80%;
     text-align: justify;
   }
   .resume-right {
-    max-width: 100%;
+    max-width: 80%;
     text-align: justify;
   }
   .blueline {
