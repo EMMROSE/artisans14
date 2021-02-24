@@ -39,11 +39,19 @@
   }
 }
 
+.footer-emrose {
+  color: white;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0px 10px;
+  &:hover { opacity: 1; text-decoration: none; color: white;}
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 650px) {
   .footer {
     height: 110px;
-    padding-left: 20%;
+    // padding-left: 20%;
     color: rgba(0,0,0,0.3);
     img {
       width: 50px;
@@ -51,6 +59,9 @@
   }
   .footer-links a {
     opacity: 1.0;
+    font-size: 8px;
+  }
+  .footer-emrose {
     font-size: 8px;
   }
   .footer-address{
@@ -61,6 +72,6 @@
 // Smallest device
 @media (min-width: 665px) and (max-width: 812px) {
   .footer {
-    padding: 32px 32px 32px 20%;
+    padding: 32px;
   }
 }

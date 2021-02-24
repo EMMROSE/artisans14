@@ -95,6 +95,27 @@ html {
   margin: auto;
 }
 
+/* Flash class and keyframe animation */
+.flashit{
+  color:#f2f;
+  -webkit-animation: flash linear 3s infinite;
+  animation: flash linear 3s infinite;
+  &.hover {
+    -webkit-animation: pause;
+    animation: pause;
+  }
+}
+@-webkit-keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: .3; }
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: .3; }
+  100% { opacity: 1; }
+}
+
 @media (max-width: 375px) {
   .resume-left {
     max-width: 100%;
@@ -111,12 +132,8 @@ html {
     max-width: 90%;
     height: auto;
   }
-  // .home {
-  //   width: 80%;
-  // }
-
   .resume {
-    p {font-size: 0.75rem;}
+    p {font-size: 1rem;}
     margin-bottom :10vh;
   }
   .resume-left {
@@ -135,3 +152,14 @@ html {
   }
 }
 
+@media (max-width: 376px){
+  .subtitle_logo {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 992px) {
+  .subtitle_logo {
+    width: 33vw;
+  }
+}
