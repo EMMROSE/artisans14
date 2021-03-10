@@ -34,7 +34,19 @@ const scrolledNav3 = () => {
   }
 }
 
+const scrolledNav4 = () => {
+  const element = document.querySelector('#contact');
+  if (element) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 200) {
+        element.classList.remove('d-none');
+      }
+    });
+  }
+}
+
 export { scrolledNav }
 export { scrolledNav2 }
 export { scrolledNav3 }
+export { scrolledNav4 }
 
