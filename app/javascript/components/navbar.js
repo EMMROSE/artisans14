@@ -35,11 +35,24 @@ const scrolledNav3 = () => {
 }
 
 const scrolledNav4 = () => {
+  const element = document.querySelector('#nav');
+  if (element) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 200) {
+        element.classList.remove('d-none');
+        element.classList.add('animate__animated', 'animate__backInDown');
+      }
+    });
+  }
+}
+
+const scrolledNav5 = () => {
   const element = document.querySelector('#contact');
   if (element) {
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 200) {
         element.classList.remove('d-none');
+        element.classList.add('animate__animated', 'animate__bounce');
       }
     });
   }
@@ -49,4 +62,5 @@ export { scrolledNav }
 export { scrolledNav2 }
 export { scrolledNav3 }
 export { scrolledNav4 }
+export { scrolledNav5 }
 

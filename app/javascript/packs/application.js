@@ -31,6 +31,7 @@ import { scrolledNav } from '../components/navbar';
 import { scrolledNav2 } from '../components/navbar';
 import { scrolledNav3 } from '../components/navbar';
 import { scrolledNav4 } from '../components/navbar';
+import { scrolledNav5 } from '../components/navbar';
 import { formSportSessions } from '../components/form';
 
 document.addEventListener('turbolinks:load', () => {
@@ -40,6 +41,7 @@ document.addEventListener('turbolinks:load', () => {
   scrolledNav2();
   scrolledNav3();
   scrolledNav4();
+  scrolledNav5();
   formSportSessions();
 });
 
