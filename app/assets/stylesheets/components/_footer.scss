@@ -27,6 +27,17 @@
 .footer-links a:hover {
   opacity: 1;
 }
+.footer-links p {
+  color: white;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.footer-links p:hover {
+  opacity: 1;
+}
 .footer .fa-heart {
   color: #D23333;
 }
@@ -58,6 +69,10 @@
     }
   }
   .footer-links a {
+    opacity: 1.0;
+    font-size: 8px;
+  }
+  .footer-links p {
     opacity: 1.0;
     font-size: 8px;
   }

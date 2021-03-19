@@ -52,7 +52,7 @@ const scrolledNav5 = () => {
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 200) {
         element.classList.remove('d-none');
-        element.classList.add('animate__animated', 'animate__bounce');
+        element.classList.add('animate__animated', 'animate__backInDown');
       }
     });
   }
