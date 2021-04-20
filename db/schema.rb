@@ -27,11 +27,12 @@ ActiveRecord::Schema.define(version: 2021_02_08_145205) do
     t.boolean "cheminee"
     t.boolean "menuiserie"
     t.boolean "couverture"
-    t.boolean "amenagement_interieur"
-    t.boolean "amenagement_exterieur"
+    t.boolean "plaquiste"
+    t.boolean "agencement"
     t.boolean "maconnerie"
     t.boolean "terrassement"
     t.boolean "tout"
+    t.text "emails"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

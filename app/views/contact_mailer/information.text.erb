@@ -1,0 +1,17 @@
+<h1>Une nouvelle demande depuis le site GA14.fr</h1>
+
+<p><b>De la part: </b><%= @contact.name %></p>
+<p><b>email: </b> <%= @contact.email %></p>
+<p><b>téléphone: </b> <%= @contact.phone %></p><br>
+<p><b>Message: </b> <%= @contact.message %></p>
+
+<% if @contact.emails.size == 11 %>
+  <p>Tous les corps de métiers sont intérrogés.</p>
+<% else %>
+  <p>Les artisans concernés par cette demande sont :</p>
+  <ul>
+  <% @contact.emails.each do |element| %>
+    <li><%= element %></li>
+  <% end %>
+  </ul>
+<% end %>

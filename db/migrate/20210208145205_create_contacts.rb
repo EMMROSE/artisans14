@@ -12,11 +12,12 @@ class CreateContacts < ActiveRecord::Migration[6.0]
       t.boolean :cheminee
       t.boolean :menuiserie
       t.boolean :couverture
-      t.boolean :amenagement_interieur
-      t.boolean :amenagement_exterieur
+      t.boolean :plaquiste
+      t.boolean :agencement
       t.boolean :maconnerie
       t.boolean :terrassement
       t.boolean :tout
+      t.text :emails
 
       t.timestamps
     end
