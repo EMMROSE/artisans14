@@ -4,8 +4,9 @@ class ContactMailer < ApplicationMailer
   #
   #   en.contact_mailer.information.subject
   #
-  def information(emails)
-    emails.each do |element|
+  def information(contact)
+    @contact = contact
+    @contact.emails.each do |element|
       mail(
         to:       "#{element}",
         subject:  "Nouveau message depuis GA14.fr"

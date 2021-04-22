@@ -17,7 +17,7 @@ class CreateContacts < ActiveRecord::Migration[6.0]
       t.boolean :maconnerie
       t.boolean :terrassement
       t.boolean :tout
-      t.text :emails
+      t.text :emails, array: true, default: []
 
       t.timestamps
     end

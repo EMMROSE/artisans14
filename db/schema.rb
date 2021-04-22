@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_145205) do
     t.boolean "maconnerie"
     t.boolean "terrassement"
     t.boolean "tout"
-    t.text "emails"
+    t.text "emails", default: [], array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

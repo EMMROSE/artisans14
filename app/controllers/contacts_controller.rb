@@ -7,59 +7,49 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    @contact.emails = []
     # "tout"=>"0",
     if @contact.tout
       # attention manque 2 adresses Picant Deniaux
-      email = ["sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr"]
-      ContactMailer.information(email).deliver_now
-      redirect_to root_path
-      flash[:notice] = "Votre message a bien été transmis"
+      # emails = ["sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr"]
+      @contact.emails = ["roseemmanuel@hotmail.com", "emrose351@gmail.com"]
+      ContactMailer.information(@contact).deliver_now
     elsif
       if @contact.electricite
-        email << "f.lefortier@gmail.com"
+        # @contact.emails << "f.lefortier@gmail.com"
+        @contact.emails << "emrose351@gmail.com"
       end
       if @contact.plombier
-        email << "poncetemilien@hotmail.fr"
+        # @contact.emails << "poncetemilien@hotmail.fr"
+        @contact.emails << "mboizet1@gmail.com"
       end
       if @contact.agencement
-        email << "profil@profil-amenagement.com"
+        # @contact.emails << "profil@profil-amenagement.com"
       end
       if @contact.maconnerie
-        email << "aze2j@live.fr"
+        # @contact.emails << "aze2j@live.fr"
       end
       if @contact.cheminee
-        email << "contact@benoist.fr"
+        # @contact.emails << "contact@benoist.fr"
       end
       if @contact.peinture
-        email << "x"
+        # @contact.emails << "x"
       end
       if @contact.plaquiste
-        email << "a.lefrancois@rlamenagement.com"
+        # @contact.emails << "a.lefrancois@rlamenagement.com"
       end
       if @contact.couverture
-        email << "x"
+        # @contact.emails << "x"
       end
       if @contact.terrassement
-        email << "sarlmarie.tp@gmail.com"
+        # @contact.emails << "sarlmarie.tp@gmail.com"
       end
       if @contact.carrelage
-        email << "stephmatt.carrelage@aliceadsl.fr"
+        # @contact.emails << "stephmatt.carrelage@aliceadsl.fr"
       end
-      ContactMailer.information(email).deliver_now
+      ContactMailer.information(@contact).deliver_now
+    end
       redirect_to root_path
       flash[:notice] = "Votre message a bien été transmis"
-    end
-    # if @contact.save
-    #   ContactMailer.general_message(@contact).deliver_now
-    #   redirect_to root_path
-    #   flash[:notice] = "Votre demande a bien été transmise"
-    # else
-    #   render :new
-    #   flash[:alert] = "Veuillez compléter le formulaire s'il vous plaît."
-    # end
-    redirect_to root_path
-    flash[:notice] = "Votre message a bien été transmis"
   end
 
   private
