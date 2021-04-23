@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
     if @contact.tout
       # attention manque 2 adresses Picant Deniaux
       # emails = ["sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr"]
-      @contact.emails = ["roseemmanuel@hotmail.com", "emrose351@gmail.com"]
+      @contact.emails = ["mboizet1@gmail.com", "emrose351@gmail.com"]
       ContactMailer.information(@contact).deliver_now
     elsif
       if @contact.electricite
@@ -24,6 +24,7 @@ class ContactsController < ApplicationController
       end
       if @contact.agencement
         # @contact.emails << "profil@profil-amenagement.com"
+        @contact.emails << "roseemmanuel@hotmail.com"
       end
       if @contact.maconnerie
         # @contact.emails << "aze2j@live.fr"
