@@ -27,14 +27,18 @@
       <a href="#"><li>Contact</li></a>
       <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
       <img src="../assets/contact-button.png" data-toggle="modal" data-target="#exampleModal">
-      <a href="https://www.profil-amenagement.fr" target="_blank">Agenceur</a>
-      <a href="https://www.mattard-carrelage.fr/" target="_blank">Carreleur</a>
+      <%= link_to "Agenceur", profil_amenagement_path%>
+<!--       <a href="https://www.mattard-carrelage.fr/" target="_blank">Carreleur</a> -->
+      <%= link_to "Carreleur", mattard_path%>
       <a href="https://www.benoist.fr/" target="_blank">Cheminées</a>
+      <%= link_to "Cheminées", benoist_path%>
       <%= link_to "Couvreur", deniaux_couverture_path%>
       <%= link_to "Electricien", lfelec_path%>
       <%= link_to "Maçon", aze_path%>
-      <a href="https://www.logikinov.com/" target="_blank">Menuisier</a>
-      <a href="https://www.peinture-picant.com/" target="_blank">Peintre</a>
+<!--       <a href="https://www.logikinov.com/" target="_blank">Menuisier</a> -->
+<%= link_to "Menuisier", logikinov_path%>
+<!--       <a href="https://www.peinture-picant.com/" target="_blank">Peintre</a> -->
+      <%= link_to "Peintre", peinture_picant_path%>
       <%= link_to "Plaquiste", rl_path%>
       <%= link_to "Plombier", poncetsas_path%>
       <%= link_to "Terrassement", entreprisemarie_path%>

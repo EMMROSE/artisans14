@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'entreprisemarie', to: 'pages#entreprisemarie'
   get 'deniaux_couverture', to: 'pages#deniaux_couverture'
   get 'rl', to: 'pages#rl'
+  get 'peinture_picant', to: 'pages#peinture_picant'
+  get 'profil_amenagement', to: 'pages#profil_amenagement'
+  get 'benoist', to: 'pages#benoist'
+  get 'logikinov', to: 'pages#logikinov'
 
   get 'mention', to: 'pages#mention'
   resources :contacts, only: [:new, :create]
