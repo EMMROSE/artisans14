@@ -9,43 +9,39 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     # "tout"=>"0",
     if @contact.tout
-      # attention manque 2 adresses Picant Deniaux
-      # emails = ["sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr"]
-      @contact.emails = ["mboizet1@gmail.com", "emrose351@gmail.com"]
+      # attention manque adresse Deniaux
+      @contact.emails = ["sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr", "romain.picant@orange.fr"]
       ContactMailer.information(@contact).deliver_now
     elsif
       if @contact.electricite
-        # @contact.emails << "f.lefortier@gmail.com"
-        @contact.emails << "emrose351@gmail.com"
+        @contact.emails << "f.lefortier@gmail.com"
       end
       if @contact.plombier
-        # @contact.emails << "poncetemilien@hotmail.fr"
-        @contact.emails << "mboizet1@gmail.com"
+        @contact.emails << "poncetemilien@hotmail.fr"
       end
       if @contact.agencement
-        # @contact.emails << "profil@profil-amenagement.com"
-        @contact.emails << "roseemmanuel@hotmail.com"
+        @contact.emails << "profil@profil-amenagement.com"
       end
       if @contact.maconnerie
-        # @contact.emails << "aze2j@live.fr"
+        @contact.emails << "aze2j@live.fr"
       end
       if @contact.cheminee
-        # @contact.emails << "contact@benoist.fr"
+        @contact.emails << "contact@benoist.fr"
       end
       if @contact.peinture
-        # @contact.emails << "x"
+        @contact.emails << "romain.picant@orange.fr"
       end
       if @contact.plaquiste
-        # @contact.emails << "a.lefrancois@rlamenagement.com"
+        @contact.emails << "a.lefrancois@rlamenagement.com"
       end
       if @contact.couverture
-        # @contact.emails << "x"
+        #@contact.emails << "x"
       end
       if @contact.terrassement
-        # @contact.emails << "sarlmarie.tp@gmail.com"
+        @contact.emails << "sarlmarie.tp@gmail.com"
       end
       if @contact.carrelage
-        # @contact.emails << "stephmatt.carrelage@aliceadsl.fr"
+        @contact.emails << "stephmatt.carrelage@aliceadsl.fr"
       end
       ContactMailer.information(@contact).deliver_now
     end
