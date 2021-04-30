@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'animate.css-rails', '~> 3.2.0'
 gem "animate-rails"
+
+gem 'postmark-rails'
