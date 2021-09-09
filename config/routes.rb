@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get 'profil_amenagement', to: 'pages#profil_amenagement'
   get 'benoist', to: 'pages#benoist'
   get 'logikinov', to: 'pages#logikinov'
+  get 'normandie_chauffage', to: 'pages#normandie_chauffage'
+  get 'samandco_tp', to: 'pages#samandco_tp'
 
   get 'mention', to: 'pages#mention'
   resources :contacts, only: [:new, :create]
