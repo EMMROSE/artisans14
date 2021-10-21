@@ -59,6 +59,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :address, :phone, :message, :tout, :plombier, :electricite, :peinture, :carrelage, :cheminee, :menuiserie, :couverture, :agencement, :plaquiste, :terrassement, :maconnerie, :terrassement, :terrassement2, :chauffagiste)
+    params.require(:contact).permit(:name, :email, :address, :phone, :message, :tout, :plombier, :electricite, :peinture, :carrelage, :cheminee, :menuiserie, :couverture, :agencement, :plaquiste, :terrassement, :maconnerie, :terrassement2, :chauffagiste)
   end
 end
