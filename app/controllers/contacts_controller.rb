@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
     # "tout"=>"0",
     if @contact.tout
       # attention manque adresse Deniaux
-      @contact.emails = ["sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr", "romain.picant@orange.fr"]
+      @contact.emails = ["contact@samandco-tp.com", "julien.nc14@gmail.com", "sarlmarie.tp@gmail.com", "aze2j@live.fr", "poncetemilien@hotmail.fr", "f.lefortier@gmail.com", "stephmatt.carrelage@aliceadsl.fr", "benoit.briere@logikinov.com", "a.lefrancois@rlamenagement.com", "profil@profil-amenagement.com", "contact@benoist.fr", "romain.picant@orange.fr"]
       ContactMailer.information(@contact).deliver_now
     elsif
       if @contact.electricite
@@ -40,9 +40,16 @@ class ContactsController < ApplicationController
       if @contact.terrassement
         @contact.emails << "sarlmarie.tp@gmail.com"
       end
+      if @contact.terrassement2
+        @contact.emails << "contact@samandco-tp.com"
+      end
       if @contact.carrelage
         @contact.emails << "stephmatt.carrelage@aliceadsl.fr"
       end
+      if @contact.chauffagiste
+        @contact.emails << "julien.nc14@gmail.com"
+      end
+
       ContactMailer.information(@contact).deliver_now
     end
       redirect_to root_path
@@ -52,6 +59,6 @@ class ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :email, :address, :phone, :message, :tout, :plombier, :electricite, :peinture, :carrelage, :cheminee, :menuiserie, :couverture, :agencement, :plaquiste, :terrassement, :maconnerie, :terrassement)
+    params.require(:contact).permit(:name, :email, :address, :phone, :message, :tout, :plombier, :electricite, :peinture, :carrelage, :cheminee, :menuiserie, :couverture, :agencement, :plaquiste, :terrassement, :maconnerie, :terrassement, :terrassement2, :chauffagiste)
   end
 end

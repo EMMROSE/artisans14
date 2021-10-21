@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2021_02_08_145205) do
     t.boolean "agencement"
     t.boolean "maconnerie"
     t.boolean "terrassement"
+    t.boolean "terrassement2"
+    t.boolean "chauffagiste"
     t.boolean "tout"
     t.text "emails", default: [], array: true
     t.datetime "created_at", precision: 6, null: false

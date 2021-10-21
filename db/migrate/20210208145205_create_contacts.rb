@@ -16,6 +16,8 @@ class CreateContacts < ActiveRecord::Migration[6.0]
       t.boolean :agencement
       t.boolean :maconnerie
       t.boolean :terrassement
+      t.boolean :terrassement2
+      t.boolean :chauffagiste
       t.boolean :tout
       t.text :emails, array: true, default: []
 
