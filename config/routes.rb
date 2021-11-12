@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'aze', to: 'pages#aze'
   get 'lfelec', to: 'pages#lfelec'
   get 'mattard', to: 'pages#mattard'
-  get 'entreprisemarie', to: 'pages#entreprisemarie'
+
   get 'deniaux_couverture', to: 'pages#deniaux_couverture'
   get 'rl', to: 'pages#rl'
   get 'peinture_picant', to: 'pages#peinture_picant'
